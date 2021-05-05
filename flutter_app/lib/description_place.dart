@@ -48,7 +48,7 @@ class DescriptionPlace extends StatelessWidget {
           ),
         ),
         Row(
-          children: [star, star, star, star, star_border],
+          children: [star, star, star, star, star_half],
         )
       ],
     );
@@ -67,7 +67,7 @@ class DescriptionPlace extends StatelessWidget {
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: [title_stars, description, ButtonPurple("Navigate")],
+      children: [title_stars, description, ButtonPurple("Ver mas...")],
     );
   }
 }

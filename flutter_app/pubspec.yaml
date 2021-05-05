@@ -79,6 +79,14 @@ flutter:
     - assets/img/audience.jpg
     - assets/img/dj.jpg
     - assets/img/friendship.jpg
+    - assets/img/bogota.jpg
+    - assets/img/bucaramanga.jpg
+    - assets/img/cartagena.jpg
+    - assets/img/medellin.jpg
+    - assets/img/family.jpg
+    - assets/img/man.jpg
+    - assets/img/shoes.jpg
+    - assets/img/women.jpg
 
   fonts:
     - family: Lato

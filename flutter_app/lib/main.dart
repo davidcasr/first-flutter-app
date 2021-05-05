@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/trips.dart';
 import 'description_place.dart';
 import 'review_list.dart';
 import 'gradient_back.dart';
@@ -10,8 +11,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final descriptionDummy =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper ornare sodales. Cras condimentum enim purus, sed placerat nunc volutpat et. Nunc malesuada, quam vel consectetur convallis, libero nisi volutpat nibh, ut aliquet diam eros eu tortor. Cras eget accumsan purus";
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -30,20 +29,9 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          // appBar: AppBar(title: Text('Hola Mundo')),
-          // body: new DescriptionPlace("Colombia", 4,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper ornare sodales. Cras condimentum enim purus, sed placerat nunc volutpat et. Nunc malesuada, quam vel consectetur convallis, libero nisi volutpat nibh, ut aliquet diam eros eu tortor. Cras eget accumsan purus"),
-          body: Stack(
-            children: [
-              ListView(
-                children: [
-                  DescriptionPlace("Colombia", 4, descriptionDummy),
-                  ReviewList()
-                ],
-              ),
-              HeaderAppBar()
-            ],
-          ),
-        ) //MyHomePage(title: 'Flutter Demo Home Page'),
+            // appBar: AppBar(title: Text('Hola Mundo')),
+            // body: new DescriptionPlace("Colombia", 4,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper ornare sodales. Cras condimentum enim purus, sed placerat nunc volutpat et. Nunc malesuada, quam vel consectetur convallis, libero nisi volutpat nibh, ut aliquet diam eros eu tortor. Cras eget accumsan purus"),
+            body: Trips()) //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }
 }
